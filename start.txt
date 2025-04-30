@@ -1,0 +1,29 @@
+PS C:\Users\Asus_\Downloads\recommandation-engine-in-drf-sk-learn> cd backend
+PS C:\Users\Asus_\Downloads\recommandation-engine-in-drf-sk-learn\backend> python manage.py createsuperuser
+Username (leave blank to use 'tuf'): admin
+Error: That username is already taken.
+Username (leave blank to use 'tuf'): admin1
+Email address: admin@gmail.com
+Password: 
+Password (again): 
+The password is too similar to the username.
+Bypass password validation and create user anyway? [y/N]: y
+Superuser created successfully.
+
+
+
+PS C:\Users\Asus_\Downloads\recommandation-engine-in-drf-sk-learn\backend> 
+
+
+
+cd backend
+python -m pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+
+
+cd frontend
+npm install
+npm run dev
